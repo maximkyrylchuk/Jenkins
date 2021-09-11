@@ -21,11 +21,11 @@ pipeline  {
                 
             }
         }
-        stage("Create docker image") {
-            steps {
-                echo 'Creating docker image ...'
-                dir('.'){
-                    sh "docker build -t Master/testsite . "
+       stage("Create docker image") {
+           steps {
+               echo 'Creating docker image ...'
+               dir('.'){
+                   sh "docker build -t Master/testsite . "
                }
           }
        }
